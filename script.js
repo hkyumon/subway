@@ -1,0 +1,36 @@
+$(document).ready(function(){
+    $('#news_wrap>ul>li:nth-child(4)>#news_slide_wrap>#slide_bt>li').click(function(){
+        $(this).animate({width:25},300)
+        $(this).siblings().animate({width:10},300)
+        $(this).css({'background-color':'#ffc300'})
+        $(this).siblings().css({'background-color':'#fff'})
+    })
+    $('#news_wrap>ul>li:nth-child(4)>#news_slide_wrap>#slide_bt>li:nth-child(1)').click(function(){
+        $('#news_wrap>ul>li:nth-child(4)>#news_slide_wrap>#slide').animate({left:0},300)
+    })
+    $('#news_wrap>ul>li:nth-child(4)>#news_slide_wrap>#slide_bt>li:nth-child(2)').click(function(){
+        $('#news_wrap>ul>li:nth-child(4)>#news_slide_wrap>#slide').animate({left:-270},300)
+    })
+    $('#news_wrap>ul>li:nth-child(4)>#news_slide_wrap>#slide_bt>li:nth-child(3)').click(function(){
+        $('#news_wrap>ul>li:nth-child(4)>#news_slide_wrap>#slide').animate({left:-540},300)
+    })
+
+     $('#slide_bt_button>li').click(function(){
+        $(this).animate({width:25},300)
+        $(this).siblings().animate({width:10},300)
+        $(this).css({'background-color':'#ffc300'})
+        $(this).siblings().css({'background-color':'#fff'})
+     })
+     $('#slide_bt_button>li:nth-child(1)').click(function(){
+        $('#slide_img').animate({left:0},300)
+     })
+     $('#slide_bt_button>li:nth-child(2)').click(function(){
+        $('#slide_img').animate({left:'-100%'},300)
+     })
+     $('#slide_bt_button>li:nth-child(3)').click(function(){
+        $('#slide_img').animate({left:'-200%'},300)
+     })
+     $('#slide_bt_button>li:nth-child(4)').click(function(){
+        $('#slide_img').animate({left:'-300%'},300)
+     })
+})
